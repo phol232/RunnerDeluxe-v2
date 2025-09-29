@@ -379,8 +379,7 @@ GameObject:
   - component: {fileID: 746459691}
   - component: {fileID: 746459690}
   - component: {fileID: 746459689}
-  - component: {fileID: 746459688}
-  - component: {fileID: 746459687}
+  - component: {fileID: 746459693}
   m_Layer: 0
   m_Name: CubeA
   m_TagString: Untagged
@@ -388,33 +387,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &746459687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746459686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b442ff42b6ab4b94381507a3470b801d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GuardAI
-  playerTarget: {fileID: 0}
-  fieldOfViewAngle: 90
---- !u!114 &746459688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746459686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f38f2fa88a72a4f43b3308194dfb699d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::VectorVisualizer
-  target: {fileID: 0}
 --- !u!65 &746459689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -507,6 +479,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &746459693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746459686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b086940f3c18042b2a0b56a3179f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SmoothLookAtTurret
+  target: {fileID: 0}
+  rotattionSpeed: 5
 --- !u!1 &829174202
 GameObject:
   m_ObjectHideFlags: 0
